@@ -1,0 +1,16 @@
+.button{
+    width: 12rem;
+    height: 12rem;
+    font-size: 5rem;
+    color: aqua;
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+
+    box-shadow: inset;
+}
+
+.button:hover{
+    box-shadow: inset;
+    transform: rotate(360deg);
+}
