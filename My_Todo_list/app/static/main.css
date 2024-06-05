@@ -1,0 +1,15 @@
+a{
+	text-decoration: underline;
+}
+
+
+body{ 
+	background:blueviolet; 
+	color:aqua; 
+	margin-top: 5px; 
+} 
+.button{ 
+	background-color:green; 
+	color: antiquewhite;
+} 
+.mark{font-size: 10px;} 
