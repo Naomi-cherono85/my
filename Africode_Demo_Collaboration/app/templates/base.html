@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="site-name">
+            <h1>Fit<span class="pulse">Pulse</span></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="nav-links" href="{{ url_for('main.index') }}">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Fitness <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('main.fitness_section', section='introduction') }}">Introduction to Fitness</a>
+                        <a href="{{ url_for('main.fitness_section', section='cardio') }}">Cardiovascular Exercises</a>
+                        <a href="{{ url_for('main.fitness_section', section='strength_training') }}">Strength Training</a>
+                        <a href="{{ url_for('main.fitness_section', section='flexibility') }}">Flexibility Exercises</a>
+                        <a href="{{ url_for('main.fitness_section', section='balance') }}">Balance Exercises</a>
+                        <a href="{{ url_for('main.fitness_section', section='core') }}">Core Exercises</a>
+                        <a href="{{ url_for('main.fitness_section', section='fitness-tips') }}">Fitness tips</a>
+                        <a href="{{ url_for('main.fitness_section', section='expert-fitness-tips') }}">Expertise Tips</a>
+                    </div>
+                </li>
+                <li><a class="nav-links" href="{{ url_for('main.nutrition') }}">Nutrition</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('main.about_section', section='our_mission') }}">Our Mission</a>
+                        <a href="{{ url_for('main.about_section', section='founders_story') }}">Founder's Story</a>
+                        <a href="{{ url_for('main.about_section', section='our_team') }}">Our Team</a>
+                        <a href="{{ url_for('main.about_section', section='our_achievements') }}">Our Achievements</a>
+                        <a href="{{ url_for('main.about_section', section='future_goals') }}">Future Goals</a>
+                    </div>
+                </li>
+                <li><a class="nav-links" href="{{ url_for('main.testimonials') }}">Testimonials</a></li>
+                <li><a class="nav-links" href="{{ url_for('main.contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+   
+</body>
+</html>

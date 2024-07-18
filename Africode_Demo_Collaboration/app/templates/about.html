@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - FitPulse{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>About FitPulse</h1>
+
+    {% if section == 'our_mission' %}
+    <section id="our_mission">
+        <h2>Our Mission</h2>
+        <p>At FitPulse, our mission is to inspire and empower individuals to achieve their fitness and wellness goals through innovative training, personalized guidance, and a supportive community. We believe that fitness is a journey, and we are committed to providing the resources, motivation, and expertise to help our clients succeed.</p>
+        <p>We aim to:</p>
+        <ul>
+            <li>Promote a holistic approach to health and wellness that encompasses physical fitness, nutrition, and mental well-being.</li>
+            <li>Offer state-of-the-art fitness programs and cutting-edge technology to enhance the workout experience.</li>
+            <li>Create a welcoming and inclusive environment where everyone feels valued and motivated to reach their full potential.</li>
+            <li>Foster a community of like-minded individuals who support and encourage each other on their fitness journeys.</li>
+            <li>Continuously innovate and improve our services to meet the evolving needs of our clients and the fitness industry.</li>
+        </ul>
+    </section>
+    {% endif %}
+    {% if section == 'Founders story' %}
+    <section id="Founders story">
+        <h2>Founders story</h2>
+        <section id="founders_story">
+            <h2>Founder's Story</h2>
+            <p>FitPulse was born out of the passion and vision of our founders, Gladwel Chelang'at and Naomy Cherono. Growing up in different parts of Kenya, both Gladwel and Naomy always had a keen interest in fitness and wellness. Despite facing numerous challenges, they pursued their dreams with unwavering determination.</p>
+            
+            <p>Gladwel's journey began with her own personal transformation. Struggling with weight issues and health problems, she decided to take control of her life. Through dedication and hard work, she adopted a healthy lifestyle, losing over 50 pounds and overcoming her health challenges. This transformation inspired her to help others achieve their fitness goals.</p>
+            
+            <p>Naomy, on the other hand, had always been active in sports and physical activities. Her background in sports science and nutrition, combined with her passion for helping others, made her a perfect partner for Gladwel. Together, they envisioned creating a holistic fitness platform that would make fitness accessible and enjoyable for everyone.</p>
+            
+            <p>In 2015, Gladwel and Naomy founded FitPulse with a simple mission: to make fitness accessible and enjoyable for everyone. They started with a small fitness studio, offering personalized training and nutrition plans. Their holistic approach and genuine care for their clients quickly gained recognition, and FitPulse began to grow.</p>
+            
+            <p>Under their leadership, FitPulse has evolved into a comprehensive fitness and wellness platform, offering a wide range of services including online coaching, fitness classes, and wellness workshops. The FitPulse team has helped thousands of clients transform their lives and achieve their health goals.</p>
+            
+            <p>Gladwel and Naomy's story is a testament to the power of perseverance, passion, and the belief that anyone can achieve their dreams with the right support and guidance. Their commitment to helping others and their vision for a healthier world continue to drive the success and growth of FitPulse.</p>
+    </section>
+    {% endif %}
+
+
+    {% if section == 'our_team' %}
+    <section id="our_team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <h3>Naomy Cherono</h3>
+            <div class="image">
+                <img class="pics-1" src="{{ url_for('static', filename='images/naomi.jpeg') }}">
+            </div>
+            <p>Email: naomycherono892@gmail.com</p>
+            <p>Phone: (254) 794461554</p>
+        </div>
+
+        <div class="team-member">
+            <h3>Gladwel Chelangat</h3>
+            <div class="image">
+                <img class="pics-2" src="{{ url_for('static', filename='images/gladwell.jpeg') }}">
+            </div>
+            <p>Email: chelangatgladwel9@gmail.com</p>
+            <p>Phone: (254) 707162940</p>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if section == 'our_achievements' %}
+    <section id="our_achievements">
+        <h2>Our Achievements</h2>
+        <ul>
+            <li>Helped thousands of clients achieve their fitness goals.</li>
+            <li>Received recognition for outstanding customer satisfaction.</li>
+            <li>Featured in prominent fitness publications or media outlets.</li>
+            <li>Won awards for innovation in fitness technology or training methods.</li>
+            <li>Expanded our services to reach a global audience.</li>
+            <li>Established partnerships with leading fitness brands or organizations.</li>
+            <li>Hosted successful fitness events or workshops.</li>
+            <li>Received positive feedback and testimonials from satisfied clients.</li>
+            <li>Contributed to the community through fitness education or charity initiatives.</li>
+            <li>Maintained a high standard of professional certifications and qualifications.</li>
+        </ul>
+    </section>
+    {% endif %}
+
+    {% if section == 'future_goals' %}
+    <section id="future_goals">
+        <h2>Future Goals</h2><section id="future_goals">
+            <h2>Future Goals</h2>
+            <p>At FitPulse, we are committed to continuously evolving and enhancing our services to meet the ever-changing needs of our clients. Our future goals are centered around expanding our reach, improving our offerings, and making a lasting impact on the global fitness community. Here are some of our key future goals:</p>
+            <ul>
+                <li><strong>Expand Our Online Presence:</strong> We aim to enhance our digital platform to provide more interactive and personalized fitness programs. This includes launching a mobile app that offers customized workout plans, nutrition advice, and virtual coaching sessions.</li>
+                <li><strong>Open New Fitness Centers:</strong> As part of our growth strategy, we plan to open new state-of-the-art fitness centers in various cities. These centers will offer a wide range of fitness classes, top-notch equipment, and wellness services.</li>
+                <li><strong>Innovate with Technology:</strong> We are investing in cutting-edge fitness technology to provide our clients with the best possible experience. This includes incorporating virtual reality workouts, AI-driven fitness analytics, and advanced wearable devices.</li>
+                <li><strong>Promote Wellness Education:</strong> We believe that knowledge is key to a healthy lifestyle. We will be launching a series of educational workshops, webinars, and online courses to educate our community on fitness, nutrition, and overall well-being.</li>
+                <li><strong>Strengthen Community Engagement:</strong> Our goal is to build a strong, supportive community both online and offline. We will host more community events, fitness challenges, and social gatherings to foster a sense of belonging and mutual support among our members.</li>
+                <li><strong>Global Outreach:</strong> We are working towards expanding our services internationally, bringing our unique approach to fitness and wellness to a global audience. This includes forming strategic partnerships with international fitness brands and organizations.</li>
+                <li><strong>Environmental Responsibility:</strong> We are committed to making our operations more sustainable. Our future initiatives include reducing our carbon footprint, using eco-friendly materials, and promoting environmental awareness within our community.</li>
+            </ul>
+            <p>These goals reflect our dedication to continuous improvement and our commitment to helping individuals lead healthier, happier lives. We are excited about the future and look forward to achieving these milestones with the support and enthusiasm of the FitPulse community.</p>
+        </section>
+        
+        
+    </section>
+    {% endif %}
+</div>
+{% endblock %}

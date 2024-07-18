@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Nutrition - FitPulse{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Nutrition for Fitness</h1>
+    <section class="nutrition-content">
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/nutrition.jpg') }}" alt="Nutrition Image 1">
+            <img src="{{ url_for('static', filename='images/nutrition2.jpg') }}" alt="Nutrition Image 2">
+        </div>
+        <p>Nutrition plays a crucial role in supporting your fitness goals. Eating a balanced diet with the right nutrients can help fuel your workouts, promote muscle recovery, and enhance overall performance.</p>
+
+        <h2>Key components of a healthy diet for fitness include:</h2>
+        <ul>
+            <li>Lean proteins to support muscle growth and repair.</li>
+            <li>Complex carbohydrates for sustained energy levels.</li>
+            <li>Healthy fats for hormone production and overall health.</li>
+            <li>Vitamins and minerals for proper bodily functions.</li>
+            <li>Adequate hydration to maintain fluid balance and prevent dehydration.</li>
+        </ul>
+        
+        <p>It's essential to tailor your nutrition to your specific fitness goals and individual needs. Consult with a nutritionist or dietitian for personalized advice and meal planning.</p>
+
+        <h2>Pre-Workout Nutrition:</h2>
+        <p>Consume a meal or snack rich in carbohydrates and proteins about 2-3 hours before your workout to provide sustained energy and support muscle recovery.</p>
+        <p>Examples include a whole grain sandwich with lean meat, yogurt with fruit, or a smoothie with protein powder and oats.</p>
+
+        <h2>Post-Workout Nutrition:</h2>
+        <p>Eat a meal or snack containing proteins and carbohydrates within 30-60 minutes after your workout to replenish glycogen stores and aid muscle recovery.</p>
+        <p>Examples include a protein shake with a banana, grilled chicken with quinoa and vegetables, or a tuna salad with whole grain crackers.</p>
+
+        <h2>Hydration:</h2>
+        <p>Drink water before, during, and after exercise to stay hydrated. For longer workouts, consider electrolyte drinks to replenish lost minerals.</p>
+
+        <h2>Listen to Your Body:</h2>
+        <p>Pay attention to how different foods affect your energy levels and performance. Adjust your diet based on your individual needs and fitness goals.</p>
+    </section>
+</div>
+{% endblock %}

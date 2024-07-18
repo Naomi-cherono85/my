@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Testimonials{% endblock %}
+
+{% block content %}
+<h1>Testimonials</h1>
+<div class="section">
+    <h2>What Our Users Say</h2>
+    <div class="content-container">
+        <div class="text-column">
+            <p class="text-light">Hear from our satisfied users and their success stories.</p>
+            <div class="testimonial">
+                <p class="user"><strong>John Doe:</strong></p>
+                <div class="image">
+                    <img src="{{ url_for('static', filename='images/john.jpeg') }}" alt="Testimonials Image">
+                </div>
+
+                <p>"This platform has completely transformed my fitness journey! The workout plans are easy to follow and highly effective. I've seen significant improvements in my strength and endurance."</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="user"><strong>Jane Smith:</strong></p>
+                <div class="image">
+                    <img src="{{ url_for('static', filename='images/jane.jpeg') }}" alt="Testimonials Image">
+                </div>
+                <p>"The recipes provided are delicious and healthy. I've lost weight and feel more energetic. The community support is also amazing. Highly recommend this platform to anyone looking to get fit."</p>
+            </div>
+
+
+            <div class="testimonial">
+                <p class="user"><strong>Mike Johnson:</strong></p>
+                <div class="image">
+                    <img src="{{ url_for('static', filename='images/mike.jpeg') }}" alt="Testimonials Image">
+                </div>
+                <p>
+                    
+                    "Great tools and resources for staying on track with my goals. The fitness gadgets section helped me find the perfect fitness tracker. Now, I can monitor my progress more effectively."</p>
+            </div>
+            <div class="testimonial">
+                <p class="user"><strong>Sarah Williams:</strong></p>
+                 <div class="image">
+            <img src="{{ url_for('static', filename='images/sara.jpeg') }}" alt="Testimonials Image">
+        </div>
+                <p>"I love the flexibility exercises and yoga routines. They have significantly improved my posture and reduced my back pain. The detailed guides and videos are very helpful."</p>
+            </div>
+
+
+            <div class="testimonial">
+                <p class="user"><strong>David Brown:</strong></p>
+                <div class="image">
+                    <img src="{{ url_for('static', filename='images/David.jpeg') }}" alt="Testimonials Image">
+                </div>
+                <p>"The platform offers excellent workout plans for all fitness levels. As a beginner, I found the step-by-step instructions very useful. I've gained more confidence and strength."</p>
+            </div>
+        </div>
+       
+    </div>
+</div>
+{% endblock %}

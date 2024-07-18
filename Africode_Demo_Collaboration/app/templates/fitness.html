@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+
+{% block title %}Fitness{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Fitness</h1>
+
+    {% if section == 'introduction' %}
+    <section id="introduction">
+        <h2>Introduction to Fitness</h2>
+        <div class="content-container">
+            <div class="text-column">
+                <p>Welcome to the Fitness section. Here you'll find tips, exercises, and guides to help you stay fit and healthy.</p>
+                <p>Regular physical activity and exercise are essential for maintaining good health and well-being.</p>
+                <p>Whether you're aiming to improve your cardiovascular endurance, build strength, or enhance flexibility, incorporating fitness into your daily routine can have numerous benefits.</p>
+                <p>Fitness not only helps you achieve physical goals but also contributes to mental and emotional well-being.</p>
+                <p>It can boost your mood, reduce stress levels, and improve sleep quality.</p>
+                <p>Getting started with fitness can be as simple as taking a brisk walk, cycling, or performing bodyweight exercises at home.</p>
+                <p>It's important to choose activities that you enjoy and can sustain over time.</p>
+                <p>Remember, consistency is key to seeing results. Start gradually, listen to your body, and gradually increase the intensity and duration of your workouts as your fitness level improves.</p>
+            </div>
+            <div class="intro">
+                <img src="{{ url_for('static', filename='images/fitness1_image.jpeg') }}" alt="Fitness Image">
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if section == 'cardio' %}
+    <section id="cardio">
+        <h2>Cardiovascular Exercises</h2>
+        <div class="exercise">
+            <div class="content-container">
+                <div class="text-column">
+                    <p>Cardiovascular exercises elevate your heart rate and improve overall cardiovascular health.</p>
+                    <p>Examples include running, swimming, cycling, and jumping rope.</p>
+                </div>
+                <div class="image exercise-images">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/running_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/swimming_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/cycling_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/skipping_image.jpeg') }}">
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if section == 'strength' %}
+    <section id="strength">
+        <h2>Strength Training</h2>
+        <div class="exercise">
+            <div class="content-container">
+                <div class="text-column">
+                    <p>Strength training exercises build muscle strength, endurance, and power.</p>
+                    <p>Examples include weightlifting, resistance band exercises, and bodyweight exercises like push-ups and squats.</p>
+                    <p>Benefits of strength training include:</p>
+                    <ol class="benefits">
+                        <li>Increased muscle mass and metabolism.</li>
+                        <li>Improved bone density and reduced risk of osteoporosis.</li>
+                        <li>Enhanced functional strength for daily activities.</li>
+                        <li>Improved posture and joint stability.</li>
+                    </ol>
+                </div>
+                <div class="image exercise-images">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/weightlifting_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/squat_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/pushup_image.jpeg') }}">
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if section == 'flexibility' %}
+    <section id="flexibility">
+        <h2>Flexibility Exercises</h2>
+        <div class="exercise">
+            <div class="content-container">
+                <div class="text-column">
+                    <p>Flexibility exercises improve range of motion and prevent injury.</p>
+                    <p>Examples include yoga, Pilates, and stretching exercises.</p>
+                </div>
+                <div class="image exercise-images">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/yoga_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/pilates_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/stretching_image.jpeg') }}">
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if section == 'balance' %}
+    <section id="balance">
+        <h2>Balance Exercises</h2>
+        <div class="exercise">
+            <div class="content-container">
+                <div class="text-column">
+                    <p>Balance exercises enhance stability and coordination.</p>
+                    <p>Examples include Tai Chi, standing on one leg, and stability ball exercises.</p>
+                </div>
+                <div class="image exercise-images">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/taichi_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/one leg_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/stabilityball_image.jpeg') }}">
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if section == 'core' %}
+    <section id="core">
+        <h2>Core Exercises</h2>
+        <div class="exercise">
+            <div class="content-container">
+                <div class="text-column">
+                    <p>Core exercises strengthen muscles in the abdomen, lower back, and pelvis.</p>
+                    <p>Examples include planks, crunches, and leg raises.</p>
+                </div>
+                <div class="image exercise-images">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/plank_image.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/crunches_images.jpeg') }}">
+                    <img class="exercise-image" src="{{ url_for('static', filename='images/legraises_image.jpeg') }}">
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if section == 'fitness-tips' %}
+    <!-- Fitness Tips Section -->
+    <section id="fitness-tips">
+        <h2>Fitness Tips</h2>
+        <div class="content-container">
+            <div class="text-column">
+                <h3>General Fitness Tips</h3>
+                <ul>
+                    <li>Stay Consistent: Consistency is key to seeing results in fitness.</li>
+                    <li>Mix It Up: Incorporate different types of exercises.</li>
+                    <li>Listen to Your Body: Pay attention to how your body feels.</li>
+                    <li>Stay Hydrated: Drink plenty of water throughout the day.</li>
+                    <li>Set Realistic Goals: Set achievable goals that motivate you.</li>
+                </ul>
+
+                <h3>Nutrition Tips</h3>
+                <ul>
+                    <li>Balance Your Plate: Aim for a balanced diet.</li>
+                    <li>Pre-Workout Fuel: Eat a small meal or snack containing carbohydrates and protein.</li>
+                    <li>Post-Workout Recovery: Refuel your body with protein and carbohydrates.</li>
+                    <li>Stay Mindful of Portions: Pay attention to portion sizes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if section == 'expert-fitness-tips' %}
+    <!-- Expert Fitness Tips Section -->
+    <section id="expert-fitness-tips">
+        <h2>Expert Fitness Tips and Advice</h2>
+        <div class="content-container">
+            <div class="text-column">
+                <h3>Cardiovascular Fitness</h3>
+                <ul>
+                    <li>Interval Training: Incorporate HIIT into your cardio workouts.</li>
+                    <li>Cross-Training: Mix different types of cardio exercises.</li>
+                    <li>Heart Rate Monitoring: Use a heart rate monitor to gauge intensity levels.</li>
+                </ul>
+
+                <h3>Strength Training</h3>
+                <ul>
+                    <li>Progressive Overload: Gradually increase weight or resistance.</li>
+                    <li>Proper Form: Focus on correct technique to prevent injuries.</li>
+                    <li>Rest and Recovery: Allow muscles adequate time to recover.</li>
+                </ul>
+
+                <h3>Flexibility and Mobility</h3>
+                <ul>
+                    <li>Dynamic Stretching: Incorporate dynamic stretches.</li>
+                    <li>Static Stretching: Perform static stretches after workouts.</li>
+                    <li>Foam Rolling: Use a foam roller to release muscle tension.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+</div>
+{% endblock %}
