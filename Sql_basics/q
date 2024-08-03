@@ -1,0 +1,9 @@
+              List of relations
+ Schema |     Name      |   Type   |  Owner   
+--------+---------------+----------+----------
+ public | mytable       | table    | postgres
+ public | person        | table    | postgres
+ public | person_id_seq | sequence | postgres
+ public | table1        | table    | nash
+(4 rows)
+
